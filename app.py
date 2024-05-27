@@ -40,7 +40,7 @@ def exibir_subtitulo(texto):
     print()
 
 def cadastrar_novo_restaurante():
-    
+
     '''Essa função é responsável por cadastrar 
        um novo restaurante
 
@@ -61,6 +61,14 @@ def cadastrar_novo_restaurante():
     voltar_ao_menu_principal()
 
 def listar_restaurantes():
+    '''
+    Essa função é responsavel por listar os restaurantes criados
+
+    inputs:
+    - Nome do restaurante
+    - Categoria
+    '''
+
     exibir_subtitulo('Listando restaurantes')
 
     print(f'{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | Status')
