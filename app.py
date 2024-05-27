@@ -5,33 +5,59 @@ restaurantes = [{'nome':'Praça', 'categoria':'Japonesa', 'ativo':False},
                 {'nome':'Cantina', 'categoria':'Italiano', 'ativo':False}]
 
 def exibir_nome_do_programa():
+    '''
+    O objetivo é exibir o nome do programa.
+    '''
     print("""
-░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
-██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
-╚█████╗░███████║██████╦╝██║░░██║██████╔╝  █████╗░░░╚███╔╝░██████╔╝██████╔╝█████╗░░╚█████╗░╚█████╗░
-░╚═══██╗██╔══██║██╔══██╗██║░░██║██╔══██╗  ██╔══╝░░░██╔██╗░██╔═══╝░██╔══██╗██╔══╝░░░╚═══██╗░╚═══██╗
-██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║  ███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
-╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░  
+  ██████  ▄▄▄       ▄▄▄▄    ▒█████   ██▀███      ▓█████▒██   ██▒ ██▓███   ██▀███  ▓█████  ██████   ██████ 
+▒██    ▒ ▒████▄    ▓█████▄ ▒██▒  ██▒▓██ ▒ ██▒    ▓█   ▀▒▒ █ █ ▒░▓██░  ██ ▓██ ▒ ██▒▓█   ▀▒██    ▒ ▒██    ▒ 
+░ ▓██▄   ▒██  ▀█▄  ▒██▒ ▄██▒██░  ██▒▓██ ░▄█ ▒    ▒███  ░░  █   ░▓██░ ██▓▒▓██ ░▄█ ▒▒███  ░ ▓██▄   ░ ▓██▄   
+  ▒   ██▒░██▄▄▄▄██ ▒██░█▀  ▒██   ██░▒██▀▀█▄      ▒▓█  ▄ ░ █ █ ▒ ▒██▄█▓▒ ▒▒██▀▀█▄  ▒▓█  ▄  ▒   ██▒  ▒   ██▒
+▒██████▒▒ ▓█   ▓██▒░▓█  ▀█▓░ ████▓▒░░██▓ ▒██▒    ░▒████▒██▒ ▒██▒▒██▒ ░  ░░██▓ ▒██▒░▒████▒██████▒▒▒██████▒▒
+▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░░▒▓███▀▒░ ▒░▒░▒░ ░ ▒▓ ░▒▓░    ░░ ▒░ ▒▒ ░ ░▓ ░▒▓▒░ ░  ░░ ▒▓ ░▒▓░░░ ▒░ ▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░
+░ ░▒  ░    ░   ▒▒ ░▒░▒   ░   ░ ▒ ▒░   ░▒ ░ ▒░     ░ ░  ░░   ░▒ ░░▒ ░       ░▒ ░ ▒░ ░ ░  ░ ░▒  ░  ░ ░▒  ░  
+░  ░  ░    ░   ▒    ░    ░ ░ ░ ░ ▒     ░   ░        ░   ░    ░  ░░          ░   ░    ░  ░  ░  ░  ░  ░  ░  
+      ░        ░  ░ ░          ░ ░     ░            ░   ░    ░              ░        ░        ░        ░  
+    
+                                    █▄ ▄█ ▄▀▄ ▀█▀ █▄█ ██▀ █ █ ▄▀▀
+                                    █ ▀ █ █▀█  █  █ █ █▄▄ ▀▄█ ▄██
+
+
 """)
 
 def exibir_opcoes():
+    '''
+    O objetivo é exibir as opções do restaurante.
+    '''
     print('1. Cadastrar restaurante')
     print('2. Listar restaurantes')
     print('3. Alternar estado do restaurante')
     print('4. Sair\n')
 
 def finalizar_app():
+    '''
+    O objetivo é apontar a opção de finalizar o programa.
+    '''
     exibir_subtitulo('Finalizar app')
 
 def voltar_ao_menu_principal():
+    '''
+    O objetivo é apontar a opção de voltar ao menu inicial do programa.
+    '''
     input('\nDigite uma tecla para voltar ao menu ')
     main()
 
 def opcao_invalida():
+    '''
+    O objetivo é apontar quando o usuario não coloca uma opção listada no menu.
+    '''
     print('Opção inválida!\n')
     voltar_ao_menu_principal()
 
 def exibir_subtitulo(texto):
+    '''
+    O objetivo é exibir um subtitulo do restaurante.
+    '''
     os.system('cls')
     linha = '*' * (len(texto))
     print(linha)
@@ -40,17 +66,14 @@ def exibir_subtitulo(texto):
     print()
 
 def cadastrar_novo_restaurante():
+    '''O objetivo da função é cadastrar um novo restaurante
+    inputs:
+    - nome do do restaurante
+    - categoria do restaurante
+    outputs:
+    - adiciona um novo restaurante no dicionário restaurante'''
 
-    '''Essa função é responsável por cadastrar 
-       um novo restaurante
 
-    Inputs:
-    - Nome do restaurante
-    - Categoria
-    Outputs:
-    - Adiciona um novo restaurante à 
-      lista de restaurantes
-    '''
     exibir_subtitulo('Cadastro de novos restaurantes')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
     categoria = input(f'Digite o nome da categoria do restaurante {nome_do_restaurante}: ')
@@ -61,17 +84,11 @@ def cadastrar_novo_restaurante():
     voltar_ao_menu_principal()
 
 def listar_restaurantes():
-    '''
-    Essa função é responsavel por listar os restaurantes criados
-
-    inputs:
-    - Nome do restaurante
-    - Categoria
-    '''
+    '''Essa função é responsavel por listar os restaurantes criados'''
 
     exibir_subtitulo('Listando restaurantes')
 
-    print(f'{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | Status')
+    #print(f'{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | Status')
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
@@ -81,6 +98,11 @@ def listar_restaurantes():
     voltar_ao_menu_principal()
 
 def alternar_estado_restaurante():
+    '''O objetivo é alterar o estado do restaurante.
+    Inputs:
+    - nome do restaurante
+    Outputs: Altera o modelo de estado atual do restaurante.
+    '''
     exibir_subtitulo('ALterando estado do restaurante')
     nome_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
     restaurante_encontrado = False
@@ -98,6 +120,7 @@ def alternar_estado_restaurante():
     voltar_ao_menu_principal()
 
 def escolher_opcao():
+    '''O objetivo é demonstrar opções para que o usuario escolha.'''
     try:
         opcao_escolhida = int(input('Escolha uma opção: '))
         # opcao_escolhida = int(opcao_escolhida)
@@ -116,7 +139,10 @@ def escolher_opcao():
         opcao_invalida()
 
 def main():
-    os.system('cls')
+    '''
+    O objetivo é armazenar as principais exibições e funções dadas anteriormente.
+    '''
+    os.system('clear')
     exibir_nome_do_programa()
     exibir_opcoes()
     escolher_opcao()
